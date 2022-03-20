@@ -25,11 +25,15 @@ ul li {
 
 .contacts {
   width: 30%;
+  max-width: 300px;
   font-family: Arial;
   margin-right: 20px;
   @include tablets_and_phones {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    max-width: 100%;
+    margin-right: 0;
     flex-wrap: wrap;
   }
 }
@@ -56,9 +60,9 @@ ul li {
   }
 
   @include tablets_and_phones {
-    width: calc(100% / 2);
+    width: 45%;
     &:last-child {
-      margin-bottom: auto;
+      margin-bottom: 10px;
     }
   }
 }
@@ -75,7 +79,9 @@ ul li {
   margin-right: 7px;
   font-size: 12px;
   display: flex;
-
+  @include tablets_and_phones {
+    flex-direction: column;
+  }
 }
 
 .deliveryType__item {
@@ -88,7 +94,7 @@ ul li {
   }
 
   @include tablets_and_phones {
-    margin-right: 5px;
+    margin: 0 0 5px 0;
   }
 }
 

@@ -11,7 +11,7 @@ const App = () => {
 	const [position, setPosition] = useState([56.841, 60.611]);
 
 	useEffect(() => {
-		fetch('http://localhost:4200/state.json')
+		fetch('https://ya-map-react-r58iz4qtr-gkashurin.vercel.app/')
 			.then((resp) => resp.json())
 			.then(json => {
 				const data = json.pickPoints;
